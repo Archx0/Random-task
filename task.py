@@ -15,7 +15,7 @@ def worklist(day):
     tasks = ['room','bathroom','kitchen ','dinnerroom']
     print(colors.OKBLUE+ f"===== {day} ====="+colors.ENDC)
 
-    for i in range(4):
+    for i in range(len(people)):
         whois = random.choice(people)
         work = random.choice(tasks)
         tasks.remove(work)
